@@ -1,8 +1,0 @@
-cmake_minimum_required(VERSION 3.16)
-project(redis_clone)
-set(CMAKE_CXX_STANDARD 17)
-add_executable(redis-server
-src/server.cpp
-src/resp_parser.cpp
-)
-target_compile_options(redis-server PRIVATE -Wall -Wextra -O2)
